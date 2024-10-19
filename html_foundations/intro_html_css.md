@@ -6,4 +6,3 @@
 **Note:** CSS is mainly used to create _static_ visual effects.
 
 - Javascript brings in interactivity in a webpage. It allows you to change HTML and CSS elements to match your specifications.
-#
