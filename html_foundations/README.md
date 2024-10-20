@@ -27,3 +27,9 @@ The `<body>` tag is where the all the content displayed on a webpage goes.
 
 In summary, the complete boilerplate has the DOCTYPE element, `<html>` element in which everything is enclosed, `<head>` element that contains metadata about the webpage, `<title>` element inside `<head>` and finally the `<body>` element where all the content goes.
 #
+# Working With Text
+- Headings range from `<h1>` to `<h6>` in terms of size and boldness.
+
+The `<strong>` element makes text bold alongside semantically marking the text as important. The difference between simply bold and strong element is that bold only makes the text thicker and strong makes the text thicker _and_ tells the browser that the text inside it is important.
+
+The `<em>` element makes text italic.
