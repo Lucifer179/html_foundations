@@ -58,3 +58,12 @@ The alt attribute is used to describe an image and is used in place of the image
 
 The height and width of the image can be defined using the same attributes. If we specify just one then it'll scale proportionally while defining both will stretch the image.
 #
+# Commit Messages
+Write the commit subject in the _imperative_. The best way to do this is to have the sentence be of the format "If applied, this commit will X".
+
+For example, "If applied, this commit will *merge pull request from branch*". 
+
+In the body, focus on making clear why a change was made in the first place - the way things worked before the change (and what was wrong with that), the way they work now, and why you decided to solve it the way you did.
+#
+# Project:Recipes
+https://github.com/Lucifer179/odin-recipes
