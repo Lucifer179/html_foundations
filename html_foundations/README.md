@@ -33,3 +33,11 @@ In summary, the complete boilerplate has the DOCTYPE element, `<html>` element i
 The `<strong>` element makes text bold alongside semantically marking the text as important. The difference between simply bold and strong element is that bold only makes the text thicker and strong makes the text thicker _and_ tells the browser that the text inside it is important.
 
 The `<em>` element makes text italic.
+# 
+# Lists
+`<ul>` is used to make an unordered list (with bullet points). 
+
+`<ol>` is used to make a ordered (numbered) list. 
+
+Each item of a list is enclosed in `<li>` and `</li>` tags.
+#
