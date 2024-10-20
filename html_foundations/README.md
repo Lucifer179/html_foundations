@@ -41,3 +41,20 @@ The `<em>` element makes text italic.
 
 Each item of a list is enclosed in `<li>` and `</li>` tags.
 #
+# Links and Images
+To link something, we first use an anchor element that contains some text that the link would be anchored to. This is done using the `<a>, </a>` tags. Then, to include the link of we can do `<a href="https://some-link.com"> My anchor </a>`. 
+
+Here, `href` stands for Hypertext Reference and is an _HTML attribute_. An HTML attritbute gives additional information to an HTML element and always goes in the element's opening tag. It's usually made up of two parts - a name and a value. In the example above, the value of `href` is the destination we want our link to go to.
+
+A link by default would open in the same tab as the webpage containing it. To change that, we can add a `target` attribute to the anchor element. If we set the value of target as "_blank" then it would open in a new tab or window. Ex: `<a href="https://some-link.com" target="_blank" rel="noopener noreferrer"> My anchor </a>`. The `noopener` and `noreferrer` values for the `rel` attribute mean that the opened link cannot gain access to the webpage from which it was opened and it cannot know which webpage has linked it respectively.
+
+**Absolute links** are links to other websites on the internet. It has to have the protocol and domain of the destination. 
+
+**Relative links** are links to other pages in our website. It does not include the domain name, only the file path to the other page relative to the page the link is in.
+
+For inserting an image, the `<img>` element is used with the src attribute to show the browser where the image is located.
+
+The alt attribute is used to describe an image and is used in place of the image if it fails to load. It also tells visually impaired users what the image is supposed to be when used with screen readers. 
+
+The height and width of the image can be defined using the same attributes. If we specify just one then it'll scale proportionally while defining both will stretch the image.
+#
