@@ -38,7 +38,7 @@ div {
 }
 ```
 
-**Grouping Selector** - if two grouups of elements have some of the same style declarations then they can just be declared together with a comma to separate them instead of declaring them separately and declare the rest as usual.
+**Grouping Selector** - if two groups of elements have some of the same style declarations then they can just be declared together with a comma to separate them instead of declaring them separately and declare the rest as usual.
 
 ```
 .read,
@@ -75,4 +75,74 @@ It can be used for chaining any combination of selectors except for chaining mor
 ```
 
 Generally it's best to avoid selecting elements that need a lot of nesting since it can get confusing.
+#
+
+# Some Basic Properties
+
+### Colour
+Colour simply be the name of the actual colour, or it can be a HEX, RGB or HSL value - each of which can be implemented in the following ways:
+
+**Name**
+```
+p {
+    color: red;
+}
+```
+
+**HEX**
+```
+p {
+    color: #1100ff;
+}
+```
+
+**RGB**
+```
+p {
+    color: rgb(0, 10, 123);
+}
+```
+
+**HSL**
+```
+p { 
+    color: hsl(15, 23%, 64%);
+}
+```
+#
+### Typography and text-align
+`font-family` - for specifying font. Generally, provide a fallback font to the one you want in case the browser can't support it like so: `font-family: "Times New Roman", serif;`.
+
+`font-size` will specify the size of the font. It should be of the format `font-size 142px`, where "px" and the size doesn't have any space between it. 
+
+`font-weight` affects boldness of the text. It can be just a keyword like "bold" or a number ranging from 1-1000. For reference, 700 is the equivalent of bold.
+
+`text-align` aligns the text horizontally within an element. Common keywords like "center" work here.
+#
+
+### Image Height and Width
+By default, the image's dimensions will be of the original. But if we wanted to change it without stretching it then we can specify one dimension and put the other as "auto".
+```
+img {
+    height: 250px;
+    width: auto;
+}
+```
+It's best to specify the height and width even if we don't plan on changing it since it'd take longer to load otherwise.
+#
+# Adding CSS to HTML
+### External CSS
+The most common way to do it is just to create a separate CSS file and linking it in the head tag with the link element.
+```
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+```
+Here, the `rel` attribute species the relationship between the HTML file and the linked file.
+### Internal CSS
+Adding CSS elements in the HTML file itself. Here, you place all CSS elements within `<style>` tags, which are then placed in `<head>` tags.
+### Inline CSS
+CSS elements are placed inside the opening tag of the element itself. It generally works if you wanna add a unique style for a _single_ element. 
+
+It generally isn't preferred though because it can get quite messy quite quickly and any inline CSS will override the other two methods which can cause unexpected results.
 #
